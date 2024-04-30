@@ -4,14 +4,24 @@ class Rectangulo:
         self.altura = altura
 
     def area(self):
-        pass # implementación de la función con la forula de área de un rectángulo
+        a=self.base*self.altura # implementación de la función con la formula de área de un rectángulo
+        return a
+    
+rectangulo=Rectangulo(4,5)
+print(f"El área del circulo es: {rectangulo.area()}")
 
-
+import math
 class Circulo:
-    pi = 3.141592653589793
-
+    
+    
     def __init__(self, radio):
-        pass # inicialización de la variable radio
+        self.__radio = radio # inicialización de la variable radio
 
     def area(self):
-        pass # implementación de la función con la forula de área de un círculo
+        a=math.pi*self.__radio**2 # implementación de la función con la formula de área de un círculo
+        return a
+        
+
+circulo=Circulo(3)
+print(f"El área del circulo es: {circulo.area()}")
+        
